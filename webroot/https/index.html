@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <link type="text/css" rel="stylesheet" href="webca-screen.css">
+   <title>Web Certificate Authority Project</title>
+</head>
+
+<body>
+
+<div id="header">
+<span style="float: left;">
+<img src="webca.png" title="Web CA logo" alt="Web CA logo" height="42" width="46">
+</span>
+&nbsp;&nbsp;
+Web CA  Project
+</div>
+
+
+<div id="content">
+<form method="POST" enctype="multipart/form-data" action="/cgi-bin/csrupload.pl">
+Your Name:<br>
+<input type="text" name="username" size="40">
+<br>
+<br>
+Telephone Number:<br>
+<input type="text" name="phone" size="40">
+<br>
+<br>
+Your Email:<br>
+<input type="text" name="email" size="40">
+<br>
+<br>
+Server Name:<br>
+<input type="text" name="servername" size="20"><b>.fmts.int</b>
+<br>
+<br>
+Please locate the CSR file:<br>
+<input type="file" name="csrfile">
+<br>
+<br>
+<input type="submit" value="Send">
+<br>
+</form>
+</div>
+
+
+<div id="sidebar">
+To avoid pain and misery, your csr file should have the folowing values:-
+<pre>
+commonName            'server.fmts.int'
+countryName           'GB'
+stateOrProvinceName   'West Midlands'
+localityName          'Birmingham'
+organizationName      'FriendMTS'
+</pre>
+</div>
+
+
+
+<div id="footer">
+Download Root CA certificate:- <a href="fmts-int-ca.cert.crt">fmts-int-ca.cert.crt</a>
+</div>
+
+</body>
+</html>
+
