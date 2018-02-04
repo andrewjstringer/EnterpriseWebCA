@@ -66,16 +66,16 @@ commonName_max          = 64
 # Default values for the above, for consistency and less typing.
 # Variable name                   Value
 #------------------------------   ------------------------------
-0.organizationName_default      = FriendMTS
-localityName_default            = Birmingham
-stateOrProvinceName_default     = West Midlands
+0.organizationName_default      = YourCompany
+localityName_default            = Town / City
+stateOrProvinceName_default     = Midlands
 countryName_default             = GB
 
 [ usr_cert ]
 # These extensions are added when 'ca' signs a request.
 basicConstraints=CA:FALSE
 keyUsage = nonRepudiation, digitalSignature, keyEncipherment
-nsComment = "FriendMTS internal CA certificate"
+nsComment = "Company internal CA certificate"
 subjectKeyIdentifier=hash
 authorityKeyIdentifier=keyid,issuer
 
