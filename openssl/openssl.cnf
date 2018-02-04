@@ -1,5 +1,5 @@
 dir                     = /opt/webca/openssl
-organisation		        = company-int
+organisation      = company-int
 
 [ ca ]
 default_ca              = CA_default
