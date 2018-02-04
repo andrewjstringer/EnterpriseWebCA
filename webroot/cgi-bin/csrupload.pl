@@ -56,11 +56,11 @@ my $opensslcnf = '/opt/webca/openssl/openssl.cnf';
 my $csrfilepath = '/opt/webca/processroot/webuploads';
 my $receivedcsrlist = '/opt/webca/processroot/receivedcsrlist.txt';
 
-my $domain = '.fmts.int';
+my $domain = '.company.int';
 
 #for emailing notifications
 my $mailer = '/usr/sbin/exim4';
-my $caemail1 = 'astringer@friendmts.com';
+my $caemail1 = 'user@company.com';
 my $caemail2 = '';
 
 my $fqdn = '';
@@ -244,7 +244,7 @@ if ($decodecsr =~ m/unable to load X509 request/)
 open MAIL,"|$mailer";
 
 print MAIL <<ConfirmEMAIL;
-From: webca\@inet01.fmts.int
+From: webca\@inet01.company.int
 To: $caemail1
 Cc: $caemail2
 Subject: CSR received for $fqdn from $email
